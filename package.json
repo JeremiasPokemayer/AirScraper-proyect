@@ -1,0 +1,25 @@
+{
+  "name": "AirScraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite "
+  },
+  "dependencies": {
+    "@types/node": "^24.1.0",
+    "date-fns": "^4.1.0",
+    "jotai": "^2.12.5",
+    "rc-slider": "^11.1.8",
+    "react": "^19.1.0",
+    "react-date-range": "^2.0.1",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.0",
+    "vite": "^7.0.5"
+  },
+  "devDependencies": {
+    "@types/css-modules": "^1.0.5"
+  }
+}

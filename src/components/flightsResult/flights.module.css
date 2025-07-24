@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border-bottom: 2px solid #000;
+  background-color: #f5f5f5;
+}
+
+.fligthsList {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: "Roboto";
+}
+
+@media (max-width: 770px) {
+  .fligthsList {
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}
+
+.cardFly {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 770px) {
+  .cardFly {
+    max-width: 770px;
+  }
+}
+
+.imgAirline {
+  height: 35px;
+  width: 35px;
+}
+
+.airlinesFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeFly {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nameAirline {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.durationFly {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.scaleText {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.airportsName {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ctnFilters {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  background-color: #2c2c2c;
+  justify-content: space-between;
+  position: relative;
+}
+
+.priceFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeFilter {
+  margin-bottom: 10px;
+}
+
+.timeFiltersContainer {
+  display: grid;
+  gap: 20px;
+}
+
+.rangeLabels {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.scalesFilter {
+  display: flex;
+  flex-direction: column;
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: white;
+  background-color: #4c4c4c;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 200px;
+  margin-top: 5px;
+}
+
+.filterSpan {
+  background-color: #3a3a3a;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.priceFilter .filterDropdown {
+  left: 23%;
+}
+
+.airlinesFilter .filterDropdown {
+  left: 51%;
+}
+
+.timeFiltersContainer .filterDropdown {
+  left: 77%;
+}
+
+.departureFilter {
+  margin-bottom: 10px;
+}
+
+.scalesSelector,
+.airlinesSelector,
+.priceInput {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.scalesSelector option,
+.airlinesSelector option {
+  background-color: #333;
+  color: #fff;
+}

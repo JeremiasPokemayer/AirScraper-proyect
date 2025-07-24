@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.root {
+  background-color: transparent;
+  font-family: "Roboto";
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.imgTravel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 56px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.ctnSearch {
+  background-color: #0000004d;
+  border-radius: 8px;
+  padding: 8px 16px 48px;
+  max-width: 960px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.search {
+  display: flex;
+  max-width: 960px;
+  max-height: 100px;
+}
+
+.searchInput {
+  display: flex;
+  height: 55px;
+  width: 100%;
+}
+
+@media (max-width: 770px) {
+  .search {
+    flex-direction: column;
+  }
+}
+
+.ctnSelect {
+  display: inline-flex;
+  margin-bottom: 8px;
+  margin-top: 0;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.select {
+  background-color: transparent;
+  border: none;
+}
+
+.searchInput input {
+  margin: 0 5px;
+  width: 100%;
+  padding-left: 60px;
+  padding: 8px 16px;
+  border: solid 1px #5f6368;
+  border-radius: 4px;
+}
+
+.calendarWrapper {
+  position: absolute;
+  margin-left: 25px;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 770px) {
+  .calendarWrapper {
+    margin-left: 0;
+  }
+}
+
+.btnCalendar {
+  display: flex;
+  padding: 8px 12px;
+  height: 55px;
+  align-items: center;
+  width: 372px;
+  margin-left: 15px;
+  border: 1px solid #555;
+  border-radius: 6px;
+}
+
+@media (max-width: 770px) {
+  .btnCalendar {
+    width: 100%;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+}
+
+.btnSearch {
+  border: none;
+  border-radius: 20px;
+  width: 115px;
+  height: 40px;
+  background-color: #8ab4f8;
+  position: absolute;
+  left: 45%;
+  top: 85%;
+}
+
+.ctnCalendar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.userIcon {
+  width: 15px;
+  height: 15px;
+}
+
+.passengerSelector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 400px;
+}
+
+.Child {
+  display: flex;
+  flex-direction: column;
+}
+
+.seatTxt {
+  font-size: 10px;
+}
+
+.btnPassenger {
+  width: 80px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.controls button {
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+}
+
+.controls span {
+  margin: 0 5px;
+}
+
+.footer button {
+  border: none;
+  background-color: transparent;
+  margin: 0 10px;
+}
